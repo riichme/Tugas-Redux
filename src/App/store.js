@@ -4,7 +4,7 @@ import counterReducer from "./Features/Counter/Reducer";
 
 
 let rootReducers = combineReducers ({
-    counter : counterReducer
+    Counter : counterReducer
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOL_EXTENSION_COMPOSE__ || compose;

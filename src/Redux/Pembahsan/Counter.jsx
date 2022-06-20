@@ -3,7 +3,7 @@ import {useDispatch} from "react-redux"
 import {decrementWitchCheckingAction, increment } from "../../App/Features/Counter/Action";
 
 const Counter  =()=> {
-    let {count} = useSelector(state => state.counter)
+    let {count} = useSelector(state => state.Counter)
     const dispatch = useDispatch();
     return (
         <div>
@@ -15,4 +15,4 @@ const Counter  =()=> {
     )
 }
 
-export default Counter
+export default Counter 

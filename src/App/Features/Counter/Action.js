@@ -16,8 +16,8 @@ export const decrement = (value) => {
 } 
 
 export const decrementWitchCheckingAction = (value) => {
-    return (dispatch, getstate) => {
-        if (getstate().Counter.count > 0) {
+    return (dispatch, getState) => {
+        if (getState().Counter.count > 0) {
             dispatch (decrement(value));
         }
     }
